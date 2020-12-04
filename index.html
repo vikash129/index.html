@@ -34,14 +34,7 @@
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
 
-                <!-- <li class="nav-item">
-                    <button class="nav-link btn btn-warning text-dark" id="clearCart" onclick="clearCart()">Clear
-                        Cart</button>
-                </li>
-
-                <li class="nav-item">
-                    <button class="nav-link btn btn-light text-dark mx-3" id="DayNight">Day/Night</button>
-                </li> -->
+              
             </ul>
             <form action="#" class="form-inline my-2 my-lg-0">
                 <input type="search" class="form-control mr-sm-2" id="searchNote" placeholder="search Note" arial-label="search">
@@ -51,11 +44,7 @@
         </div>
     </nav>
 
-    <!-- <div class="alert alert-success alert-dismissible fade show" role="alert" id="alertSuccess">
-    <strong>Success !!</strong>Your <b>Order Id  is {{ order_id }} </b>Use This TO Track your Order.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick = 'home()' >
-      <span aria-hidden="true">Click To return Home &times;</span>
-    </button>
+
   </div> -->
     <div class="container my-4">
         <h1>Welcome to My Notes.Com</h1>
@@ -77,15 +66,7 @@
         <hr>
 
         <div id="allNotes" class="row container-fluid align-items-center">
-<!-- 
-            `<div class="card mx-2 my-2 noteCard" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Notes ${index + 1}</h5>
-                    <p class="card-text">${element}</p>
-                    <button id=${index} class="btn btn-primary" onclick='deleteNote(this.id)' >Delete</button>
-                    <button id="hide" class="btn btn-primary">Hide</button>
-                </div>
-            </div>` -->
+
         </div>
 
 
@@ -191,8 +172,6 @@ let noteCards = document.getElementsByClassName('noteCard')
 //HTMLCollection(3) [div.card.mx-2.my-2.noteCard., div.card.mx-2.my-2.noteCard., div.card.mx-2.my-2.noteCard.] 
 
 Array.from(noteCards).forEach(function(element , index){
-    // console.log(element)
-    // elemnt = <div class=​"card mx-2 my-2 noteCard " style=​"width:​ 18rem;​">​…​</div>​
 
     
     let cartTxt = element.getElementsByTagName('p')[0].innerText
@@ -206,11 +185,6 @@ Array.from(noteCards).forEach(function(element , index){
 })
 
 
-// Addtional features
-/*1.addd title of each  note
-2.mark  note as important
-3. sepates nots by user
-4.host on server
 
 
 </script>
