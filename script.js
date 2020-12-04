@@ -109,8 +109,3 @@ Array.from(noteCards).forEach(function(element , index){
 })
 
 
-// Addtional features
-/*1.addd title of each  note
-2.mark  note as important
-3. sepates nots by user
-4.host on server
